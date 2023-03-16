@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Инфоам</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Noto+Sans:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -34,7 +39,7 @@
 
 
             <ul id="menu">
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="glavnaia.html">Главная</a></li>
                 <li><span class="custom-dropdown big">  
                     <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">Статьи</button>
@@ -47,17 +52,14 @@
 
                 </li>
                 <li><a href="">Об авторе</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
 
-
-        <div class="div3">
-            <h2 class="title">Контактная информация</h2>
-        </div>
     
         <main class="main">
-    
+            <class="title"><h3><b>Контактная информация</b></h3></class>
+            <br>
             <div class="col_w310 float_l">
     
                 <h4 class="title">Пожалуйста, заполните контактную форму</h4>
@@ -79,28 +81,27 @@
                         <input type="submit" class="submit_btn" name="submit" value="Отправить" />
                         <input type="reset" class="submit_btn" name="reset" value="Очистить" />
     
-    
-    
                     </form>
                 </div>
                 <div class="cleaner h10"></div>
                 <div class="cleaner h10"></div>
-                <div class="col_w310 float_r">
+            </div>
     
-                    <class="title">Наше место нахождения
-                    <br>
-                    <div class="image_wrapper"><span></span><a href="http://maps.google.com" target="_blank"></a></div>
-                    <div class="cleaner h30"></div>
-                    <br>
-                    <class="title">Наш адрес
-                    <br>
-                    Центр Ювента<br>
-                    ЯНАО <br>
-                    г.Ноябрьск<br>
-                    Муравленко 3<br>
-                    <br>
-                    Tel: +79088530411<br>
-                    Email: <a href="shedvlada@gmail.com">shedvlada@gmail.com</a>
+    
+            <div>
+                <br>
+                <h4 class="title">Наш адрес:</h4>
+                <br>
+                Центр Ювента<br>
+                ЯНАО <br>
+                г.Ноябрьск<br>
+                Муравленко 3<br>
+                <br>
+                Tel: +79088530411<br>
+                Email: <a href="shedvlada@gmail.com">shedvlada@gmail.com</a>
+            </div>
+    
+                    
                 </div>
         
             </div>
@@ -110,30 +111,6 @@
         </main>
 
         </div>
-
-        <aside>
-            <div class="widget">
-                <h3 class="widget-title">Новости</h3>
-                <ul class="widget-category-list">
-                    <li>новость 1 </li>
-                    <li>новость 2 </li>
-
-                </ul>
-            </div>
-
-            <div class="widget">
-                <h3 class="widget-title">Подписка на рассылку</h3>
-
-                <form action="" method="post" id="subscribe">
-                    <input type="email" name="email" placeholder="Ваш email" required>
-                    <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
-                </form>
-                <br>
-
-                <a href="tel:+79999999999" class="call-button">Позвонить</a>
-            </div>
-
-        </aside>
 
     </main>
 

@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Инфоам</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Noto+Sans:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -32,6 +38,7 @@
         <nav class="container1">
 
 
+           
             <ul id="menu">
                 <li><a href="glavnaia.html">Главная</a></li>
                 <li><span class="custom-dropdown big">  
@@ -46,11 +53,34 @@
 
                 </li>
                 <li><a href="">Об авторе</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
 
-        <div id="main">
+        <div class="main">
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title"><b>Новости</b></h3>
+                    <ul class="widget-category-list">
+                        <li>новость 1 </li>
+                        <li>новость 2 </li>
+        
+                    </ul>
+                </div>
+        
+                <div class="widget">
+                    <h3 class="widget-title"><b>Подписка на рассылку</b></h3>
+        
+                    <form action="" method="post" id="subscribe">
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+                    </form>
+                    <br>
+        
+                    <a href="" class="call-button">Подписаться</a>
+                </div>
+        
+            </aside>
             <p> <b><h2>ТЕМА 1.</h2></b>
                 <br>
                 <b><h3><center>Информатика как научная дисциплина.</center></b></h3>
@@ -110,6 +140,7 @@
                 </p>
                 <br>
                 <p><b><center>Информационные процессы. Информационные технологии.</center></b>
+                <br>
                 &emsp;<b>Обработка информации</b> — получение одних информационных объектов из других информационных объектов путем выполнения некоторых алгоритмов.
                 Обработка является одной из основных операций, выполняемых над информацией, и главным средством увеличения объёма и разнообразия информации.
                 <br>
@@ -121,6 +152,7 @@
                 Информационные процессы (сбор, обработка и передача информации) всегда играли важную роль в науке, технике и жизни общества. В ходе эволюции человечества просматривается устойчивая тенденция к автоматизации этих процессов, хотя их внутреннее содержание по существу осталось неизменным.
                 <br>
                 &emsp;<b>Сбор информации</b> — это деятельность субъекта, в ходе которой он получает сведения об интересующем его объекте. Сбор информации может производиться или человеком, или с помощью технических средств и систем — аппаратно. Например, пользователь может получить информацию о движении поездов или самолетов сам, изучив расписание, или же от другого человека непосредственно, либо через какие-то документы, составленные этим человеком, или с помощью технических средств (автоматической справки, телефона и т. д.). Задача сбора информации не может быть решена в отрыве от других задач, — в частности, задачи обмена информацией (передачи).
+                <br>
                 &emsp;<b>Обмен информацией</b> — это процесс, в ходе которого источник информации ее передает, а получатель — принимает. Если в передаваемых сообщениях обнаружены ошибки, то организуется повторная передача этой информации. В результате обмена информацией между источником и получателем устанавливается своеобразный «информационный баланс», при котором в идеальном случае получатель будет располагать той же информацией, что и источник.
                 Обмен информации производится с помощью сигналов, являющихся ее материальным носителем. Источниками информации могут быть любые объекты реального мира, обладающие определенными свойствами и способностями. Если объект относится к неживой природе, то он вырабатывает сигналы, непосредственно отражающие его свойства. Если объектом-источником является человек, то вырабатываемые им сигналы могут не только непосредственно отражать его свойства, но и соответствовать тем знакам, которые человек вырабатывает с целью обмена информацией.
                 <br>
@@ -133,31 +165,7 @@
 
         </div>
 
-        <aside>
-            <div class="widget">
-                <h3 class="widget-title">Новости</h3>
-                <ul class="widget-category-list">
-                    <li>новость 1 </li>
-                    <li>новость 2 </li>
-
-                </ul>
-            </div>
-
-            <div class="widget">
-                <h3 class="widget-title">Подписка на рассылку</h3>
-
-                <form action="" method="post" id="subscribe">
-                    <input type="email" name="email" placeholder="Ваш email" required>
-                    <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
-                </form>
-                <br>
-
-                <a href="tel:+79224547569" class="call-button">Позвонить</a>
-            </div>
-
-        </aside>
-
-    </main> <!-- конец div class="container"-->
+    </main>
 
     <footer>
         <div class="container">
