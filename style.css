@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
     transition: .5s ease-in-out;
-    /* добавим плавность переходов для всех элементов страницы*/
 }
 
 ul {
@@ -41,7 +40,6 @@ body {
     background: #f7f7f7;
 }
 
-/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
 header:after,
 .container:after,
 footer:after,
@@ -52,7 +50,6 @@ footer:after,
     clear: both;
 }
 
-/* стилевой класс, который управляет шириной контейнера сетки*/
 .container {
     margin: 0 auto;
     width: 100%;
@@ -61,7 +58,6 @@ footer:after,
 }
 
 .container1 {
-
     width: 20%;
     max-width: 300px;
     min-width: 200px;
@@ -85,9 +81,6 @@ header {
     background-size:100%;
 }
 
-
-
-/* логотип */
 .logo {
     display: block;
     float: left;
@@ -96,7 +89,16 @@ header {
     height: 100px;
 }
 
-/* меню */
+.main {
+    color: #111;
+    text-transform: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 600px;
+    line-height: 40px;
+    font-size: 14px;
+    line-height: 1;
+}
+
 #menu {
     float: right;
 }
@@ -108,7 +110,7 @@ header {
 
 #menu a {
     color: #111;
-    text-transform: uppercase;
+    text-transform: Montserrat;
     letter-spacing: 1px;
     font-weight: 600;
     display: block;
@@ -123,9 +125,9 @@ header {
     margin-right: 0;
 }
 
-/* форма поиска */
 #searchform {
     float: right;
+    top: 5px;
     margin-left: 46px;
     display: inline-block;
     position: relative;
@@ -158,15 +160,12 @@ header {
     outline: 2px solid #EBEBE3;
 }
 
-
-/* левый контейнер */
 .posts-list {
     margin-bottom: 30px;
     width: 50%;
     float: left;
 }
 
-/* блок для статьи */
 .post {
     margin-bottom: 35px;
 }
@@ -184,8 +183,6 @@ header {
     margin-bottom: 15px;
 }
 
-
-
 .post-title {
     margin-bottom: 12px;
     font-size: 26px;
@@ -202,13 +199,11 @@ header {
     }
 }
 
-/* правый контейнер */
 aside {
     width: 25%;
     float: right;
 }
 
-/* блок для виджетов */
 .widget {
     padding: 20px 15px;
     background: white;
