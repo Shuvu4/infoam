@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инфоам</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+</div>
+    <header>
+        <div class="container">
+            <a class="logo" href="glavnaia.html">
+                <img src="icons/logo.svg" alt="icon">
+
+            </a>
+            <div class="nav-toggle"><span></span></div>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать на сайте... &#128270;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+
+            </form>
+
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="container1">
+
+
+            <ul id="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><span class="custom-dropdown big">  
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Статьи</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="temi.html">Тема 1. Информатика как научная дисциплина</a>
+                          <a href="#">Тема 2.</a>
+                          <a href="#">Тема 3.</a>
+                        </div>
+                      </div>  
+
+                </li>
+                <li><a href="">Об авторе</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="div3">
+            <h2 class="title">Контактная информация</h2>
+        </div>
+    
+        <main class="main">
+    
+            <div class="col_w310 float_l">
+    
+                <h4 class="title">Пожалуйста, заполните контактную форму</h4>
+    
+                <div id="contact_form">
+    
+                    <form method="post" action="">
+    
+                        <label for="author"><br>Ваше имя:</label>
+                        <input type="text" name="name" pattern="[А-Яа-яЁё]{4,}" title="Имя должно быть на русском. Пример: Степа, Петя, Вася, Оля" class="required input_field" />
+    
+                        <label for="email"><br>Ваш Email:</label>
+                        <input type="text" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" title="Пример: bloggood@mail.ru" class="validate-email required input_field" required />
+    
+                        <label for="text"><br>Ваш вопрос:</label>
+                        <textarea name="quest" rows="0" cols="0" class="required"></textarea>
+                        <div class="cleaner h10"></div>
+    
+                        <input type="submit" class="submit_btn" name="submit" value="Отправить" />
+                        <input type="reset" class="submit_btn" name="reset" value="Очистить" />
+    
+    
+    
+                    </form>
+                </div>
+                <div class="cleaner h10"></div>
+                <div class="cleaner h10"></div>
+                <div class="col_w310 float_r">
+    
+                    <class="title">Наше место нахождения
+                    <br>
+                    <div class="image_wrapper"><span></span><a href="http://maps.google.com" target="_blank"></a></div>
+                    <div class="cleaner h30"></div>
+                    <br>
+                    <class="title">Наш адрес
+                    <br>
+                    Центр Ювента<br>
+                    ЯНАО <br>
+                    г.Ноябрьск<br>
+                    Муравленко 3<br>
+                    <br>
+                    Tel: +79088530411<br>
+                    Email: <a href="shedvlada@gmail.com">shedvlada@gmail.com</a>
+                </div>
+        
+            </div>
+    
+    
+            
+        </main>
+
+        </div>
+
+        <aside>
+            <div class="widget">
+                <h3 class="widget-title">Новости</h3>
+                <ul class="widget-category-list">
+                    <li>новость 1 </li>
+                    <li>новость 2 </li>
+
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Подписка на рассылку</h3>
+
+                <form action="" method="post" id="subscribe">
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+                </form>
+                <br>
+
+                <a href="tel:+79999999999" class="call-button">Позвонить</a>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col"><span>© 2023</span></div>
+            <div class="footer-col">
+
+                <div class="footer-col1">
+
+                    <a href="mailto:vl@yandex.ru"><img src="./icons/icon2.svg" alt="Написать письмо" class="logo1" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

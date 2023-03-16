@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Инфоам</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -31,11 +34,20 @@
 
     <main class="container">
         <nav class="container1">
-
-
+            
             <ul id="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="temi.html">Темы</a></li>
+                <li><a href="glavnaia.html">Главная</a></li>
+                <li><span class="custom-dropdown big">  
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Статьи</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="temi.html">Тема 1. Информатика как научная дисциплина</a>
+                          <a href="#">Тема 2.</a>
+                          <a href="#">Тема 3.</a>
+                        </div>
+                      </div>  
+
+                </li>
                 <li><a href="">Об авторе</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
@@ -47,8 +59,10 @@
                 <div class="post-image"><a href=""><img src="images/photo.png"></a></div>
                 <div class="post-content">
 
-                    <h2 class="post-title">Платформа для качественного изучения информатики</h2>
-
+                    <h2 class="post-title"><b>Платформа для качественного изучения информатики</b></h2>
+                    <div class = "block1"><div class = "text1">Доступно</div><br><br>
+                    <div class = "text2">Бесплатные статьи для наших пользователей</div>
+                    </div>
                 </div>
             </article>
 
@@ -56,7 +70,7 @@
 
         <aside>
             <div class="widget">
-                <h3 class="widget-title">Новости</h3>
+                <h3 class="widget-title"><b>Новости</b></h3>
                 <ul class="widget-category-list">
                     <li>новость 1 </li>
                     <li>новость 2 </li>
@@ -65,7 +79,7 @@
             </div>
 
             <div class="widget">
-                <h3 class="widget-title">Подписка на рассылку</h3>
+                <h3 class="widget-title"><b>Подписка на рассылку</b></h3>
 
                 <form action="" method="post" id="subscribe">
                     <input type="email" name="email" placeholder="Ваш email" required>

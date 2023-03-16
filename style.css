@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display';
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
 }
@@ -36,9 +36,51 @@ body {
     font-family: 'Open Sans', arial, sans-serif;
     font-size: 14px;
     line-height: 1;
-    color: #373737;
+    color: #111;
     background: #f7f7f7;
 }
+
+.dropbtn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4D62E2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    
+.dropdown-content a:hover {background-color: #f1f1f1}
+    
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+.dropdown:hover .dropbtn {
+    background-color: #FFC059;
+    }
+
 
 header:after,
 .container:after,
@@ -55,18 +97,59 @@ footer:after,
     width: 100%;
     max-width: 960px;
     padding: 0 15px;
+    
 }
 
 .container1 {
+    background-color: #CCD3FF;
     width: 20%;
     max-width: 300px;
-    min-width: 200px;
+    min-width: 150px;
     padding: 0 15px;
     float: left;
+
 }
 
 .img {
     position: absolute;
+}
+
+.block1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 35%;
+    top: 62%;
+    background: #CCD3FF;
+    border-radius: 20px;
+
+
+}
+
+.text1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-feature-settings: 'liga' off, 'kern' off;
+}
+
+.text2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-feature-settings: 'liga' off, 'kern' off;
 }
 
 header {
@@ -90,8 +173,9 @@ header {
 }
 
 .main {
+    width: 50%;
     color: #111;
-    text-transform: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-weight: 600px;
     line-height: 40px;
@@ -110,7 +194,7 @@ header {
 
 #menu a {
     color: #111;
-    text-transform: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-weight: 600;
     display: block;
@@ -162,6 +246,7 @@ header {
 
 .posts-list {
     margin-bottom: 30px;
+    margin-left: 2.5%;
     width: 50%;
     float: left;
 }
@@ -241,7 +326,7 @@ aside {
 .widget-category-list li a:before {
     content: "\f105";
     display: inline-block;
-    font-family: 'FontAwesome';
+    font-family: 'Montserrat', sans-serif;
     margin-right: 10px;
     color: #c6c6c6;
 }
@@ -265,7 +350,6 @@ aside {
     float: left;
 }
 
-/* форма подписки */
 #subscribe {
     position: relative;
     width: 100%;
@@ -335,16 +419,24 @@ footer {
 }
 
 .call-button {
-    all: unset;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
     background-color: #4D62E2;
-    padding: 10px 15px;
     border-radius: 5px;
-    color: #E2E2E2;
+    color: #ffffff;
+    padding: 10px 10px;
+    transition: all 0.8s ease 0s;
 }
 
 .call-button:hover {
-    background-color: #3b32b3;
     cursor: pointer;
+    font-size: 1rem;
+    background-color: #FFC059;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #E2E2E2;
 }
 
 .logo1 {
@@ -365,8 +457,6 @@ footer {
         padding: 10px 0;
     }
 
-
-    /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
     .posts-list,
     aside {
         width: 100%;
@@ -382,7 +472,6 @@ footer {
 
     @media (max-width: 480px) {
 
-        /* отменяем обтекание для логотипа и выравниваем по центру*/
         .logo {
             float: none;
             margin: 0 auto 15px;
@@ -393,25 +482,21 @@ footer {
             margin: 0 2px;
         }
 
-        /* позиционируем меню на увеличившуюся высоту шапки */
         #menu {
             top: 118px;
         }
 
-        /* позиционируем форму поиска по левому краю */
         #searchform {
             float: left;
             margin-left: 0;
         }
 
-        /* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
         .post-footer {
             border-top: none;
             border-bottom: none;
             text-align: center;
         }
 
-        /* отменяем позиционирование кнопок соцсетей */
         .post-social {
             position: static;
             text-align: center;
@@ -423,7 +508,6 @@ footer {
             font-size: 1.2em;
         }
 
-        /* отменяем обтекание для столбцов подвала страницы */
         .footer-col {
             float: none;
             margin-bottom: 20px;
